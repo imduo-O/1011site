@@ -394,7 +394,7 @@ section {
   text-align: center;
   transition: all 0.4s;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .about-card::before {
@@ -745,4 +745,34 @@ section {
   .nav-links {
     gap: 12px;
   }
+}
+
+.tip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* 隐藏提示 */
+.tip-text {
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+/* hover 显示 */
+.tip:hover .tip-text {
+  opacity: 1;
 }
