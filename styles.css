@@ -394,7 +394,7 @@ section {
   text-align: center;
   transition: all 0.4s;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .about-card::before {
